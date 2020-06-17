@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SANTANDER - DIVERSIDADE NA PRÁTICA</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+
+<div class="background">
+  <div class="player-names">
+    <div class="tit">
+    <h4>Bem-vindo ao Jogo de Diversidade na Prática</h4>
+    <p>Digite o nome dos Jogadores</p></div>
+
+    <div class="plname">
+    <input id="player-name-1" type="text" placeholder="Jogador 1" />
+    <input id="player-name-2" type="text" placeholder="Jogador 2" />
+    <input id="player-name-3" type="text" placeholder="Jogador 3" />
+    <input id="player-name-4" type="text" placeholder="Jogador 4" />
+  </div>
+
+  <div class="bt">
+    <button class="btn-enter" id="btn-enter">INICIAR</button>
+  </div>
+    
+
+  </div>
+</div>
+
+
+
+<body>
+  <!-- partial:index.partial.html -->
+
+  <div class="grid-container">
+    <div class="newgame">
+      <button class="btn-new" onClick="window.location.href=window.location.href">NOVO JOGO</button>
+    </div>
+    <div class="Encerrar">
+      <button class="btn-hold">Encerrar</button>
+    </div>
+    <div class="header1">
+      <div class="time"></div>
+
+
+    </div>
+
+    <div class="header2">
+      <div class="titulosup">JOGO DE DIVERSIDADE NA PRÁTICA</div>
+    </div>
+
+    <div class="mensagem">
+      <div id="out">NUMBER</div>
+    </div>
+    <div class="Footer"></div>
+    <div class="roleta">
+      <button type="button" id="btn" class="btn-roll" onclick="startSpin();">Gire a Roleta</button>
+
+      <canvas id="canvas" width="600" height="600">
+
+      </canvas>
+
+    </div>
+    <div class="jog1">
+      <div class="icon_jog1"></div>
+      <div class="nome_jog1">
+        <div class="player-name" id="name-0">Player 1</div>
+      </div>
+      <div class="score_jog1">
+        <div class="player-score" id="score-0">0</div>
+        <div class="player-current-box">
+          <div class="player-current-label">Current</div>
+          <div class="player-current-score" id="current-0">11
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="jog2">
+      <div class="icon_jog2">
+
+      </div>
+      <div class="nome_jog2">
+        <div class="player-name" id="name-1">Player 2</div>
+      </div>
+      <div class="score_jog2">
+        <div class="player-score" id="score-1">0</div>
+        <div class="player-current-box">
+          <div class="player-current-label">Current</div>
+          <div class="player-current-score" id="current-1">0</div>
+        </div>
+      </div>
+    </div>
+    <div class="jog3">
+      <div class="icon_jog3">
+
+      </div>
+      <div class="nome_jog3">
+        <div class="player-name" id="name-2">Player 3</div>
+      </div>
+      <div class="score_jog3">
+
+        <div class="player-score" id="score-2">0</div>
+        <div class="player-current-box">
+          <div class="player-current-label">Current</div>
+          <div class="player-current-score" id="current-2">0</div>
+        </div>
+      </div>
+    </div>
+    <div class="jog4">
+      <div class="icon_jog4">
+
+      </div>
+      <div class="nome_jog4">
+        <div class="player-name" id="name-3">Player 4</div>
+      </div>
+      <div class="score_jog4">
+
+
+        <div class="player-score" id="score-3">0</div>
+        <div class="player-current-box">
+          <div class="player-current-label">Current</div>
+          <div class="player-current-score" id="current-3">0</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="carta">
+
+      <div class="quiz" id="quiz">
+        <div class="tituloQ">
+          <img id="img1" src="https://assets.codepen.io/4530986/Balao.png">
+          <h2>Quiz</h2>
+        </div>
+        <div class="question" id="question"></div>
+        <div class="choices" id="choices">
+          <div class="choice" id="A" onclick="checkQuizAnswer('A')"></div>
+          <div class="choice" id="B" onclick="checkQuizAnswer('B')"></div>
+          <div class="choice" id="C" onclick="checkQuizAnswer('C')"></div>
+        </div>
+
+      </div>
+
+      <div class="dilema" id="dilema">
+        <div class="tituloD">
+          <img id="img1" src="https://assets.codepen.io/4530986/icon-dilema.png">
+          <h2>Dilema</h2>
+        </div>
+        <div class="questionD" id="questionD"></div>
+        <div class="choicesD" id="choicesD">
+          <div class="choiceD" id="X" onclick="checkDilemaAnswer('X')">
+          </div>
+          <div class="choiceD" id="V" onclick="checkDilemaAnswer('V')"></div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  </div>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/zarocknz/javascript-winwheel@master/Winwheel.js"></script>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<div class="background"></div>
+
+<div class="player-names">
+	<h1>Bem vindo ao Jogo de Diversidade na Prática</h1>
+  <p>Digite o nome dos Jogadores</p>
+	<input id="player-name-1" type="text" placeholder="Jogador 1" />
+	<input id="player-name-2" type="text" placeholder="Jogador 2" />
+	<input id="player-name-3" type="text" placeholder="Jogador 3" />
+	<input id="player-name-4" type="text" placeholder="Jogador 4" />
+	<button class="btn-enter" id="btn-enter">INICIAR</button>
+</div>
+
+
+<div class="grid-container">
+  <div class="newgame">
+    <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+  </div>
+  <div class="Encerrar">
+    <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+  </div>
+  <div class="header1"></div>
+  <div class="header2">
+       <h1 class="rodape">DIVERSIDADE NA PRÁTICA</h1>
+  </div>
+  <div class="mensagem">
+    <div class="dice"></div>
+		<div id="out">NUMBER</div>
+  </div>
+  <div class="Footer"></div>
+  <div class="roleta">
+
+    <button type="button" id="btn" class="btn-roll" onclick="spin();"></i>Gire a Roleta</button>
+    <canvas id="canvas" width="500" height="500"></canvas>
+
+  </div>
+  <div class="jog1">
+    <div class="icon_jog1"></div>
+    <div class="nome_jog1">
+      <div class="player-name" id="name-0">Player 1</div>
+    </div>
+    <div class="score_jog1">
+      <div class="player-score" id="score-0">43</div>
+			<div class="player-current-box">
+				<div class="player-current-label">Current</div>
+				<div class="player-current-score" id="current-0">11
+				</div>
+			</div>
+    </div>
+  </div>
+  <div class="jog2">
+    <div class="icon_jog2">
+
+    </div>
+    <div class="nome_jog2">
+      <div class="player-name" id="name-1">Player 2</div>
+    </div>
+    <div class="score_jog2">
+      <div class="player-score" id="score-1">72</div>
+			<div class="player-current-box">
+				<div class="player-current-label">Current</div>
+				<div class="player-current-score" id="current-1">0</div>
+			</div>
+    </div>
+  </div>
+  <div class="jog3">
+    <div class="icon_jog3">
+
+    </div>
+    <div class="nome_jog3">
+      <div class="player-name" id="name-2">Player 3</div>
+    </div>
+    <div class="score_jog3">
+      
+      <div class="player-score" id="score-2">72</div>
+			<div class="player-current-box">
+				<div class="player-current-label">Current</div>
+				<div class="player-current-score" id="current-2">0</div>
+			</div>
+    </div>
+  </div>
+  <div class="jog4">
+    <div class="icon_jog4">
+
+    </div>
+    <div class="nome_jog4">
+      <div class="player-name" id="name-3">Player 4</div>
+    </div>
+    <div class="score_jog4">
+      
+      
+      <div class="player-score" id="score-3">72</div>
+			<div class="player-current-box">
+				<div class="player-current-label">Current</div>
+				<div class="player-current-score" id="current-3">0</div>
+			</div>
+    </div>
+  </div>
+  <div class="carta">
+    <div class="quiz" id="quiz" style="display: none">
+      <p class="tituloQ">Quiz</p>
+      <div id="question"></div>
+      <div id="choices">
+        <div class="choice" id="A" onclick="checkQuizAnswer('A')"></div>
+        <div class="choice" id="B" onclick="checkQuizAnswer('B')"></div>
+        <div class="choice" id="C" onclick="checkQuizAnswer('C')"></div>
+      </div>
+   
+
+    </div>
+  </div>
+</div>
